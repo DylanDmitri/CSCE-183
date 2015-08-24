@@ -29,24 +29,19 @@ public class TimeDilation {
 		System.out.println("at " + percent * 100 + "% the speed of light, ");
 		System.out.println("your friends on Earth would experience ");
 		if (years > 0) {
-			System.out.println(years + " year(s)");
-			
+			System.out.println(years + " year(s)");			
 		}
 		if (weeks > 0) {
-			System.out.println(weeks + " week(s)");
-			
+			System.out.println(weeks + " week(s)");			
 		}
 		if (days > 0) {
-			System.out.println(days + " day(s)");
-			
+			System.out.println(days + " day(s)");			
 		}
 		if (hours > 0) {
-			System.out.println(hours + " hour(s)");
-			
+			System.out.println(hours + " hour(s)");			
 		}
 		if (minutes > 0) {
-			System.out.printf("%.2f minute(s)", minutes);
-			
+			System.out.printf("%.2f minute(s)", minutes);			
 		}
 		
 		console.close();

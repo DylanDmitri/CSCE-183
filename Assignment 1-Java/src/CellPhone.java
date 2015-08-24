@@ -27,7 +27,6 @@ public class CellPhone {
 		}else{			
 			System.out.println("Your average daily use (" + actualMean + " min/day) is less than your minute plan of (" + targetMean + " min/day).");
 			System.out.println("If you continue this usage, you'll have " + (planMinutes - actualMean * 30) + " minutes remaining at the end of the month");
-
 		}
 		System.out.println("To meet your limit, you should use " + ((planMinutes - usedMinutes) / daysLeft)  + " min/day.");
 		console.close();
