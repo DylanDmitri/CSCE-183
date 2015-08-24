@@ -7,12 +7,8 @@
 import java.util.*;
 
 public class Odometer {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//mostly self explanatory
 		Scanner console = new Scanner(System.in);			
 		
 		System.out.print("Odometer Start: ");
@@ -37,7 +33,5 @@ public class Odometer {
 		System.out.printf("Cost per mile: $%.2f", costPerMile);
 
 		console.close();
-
 	}
-
 }
