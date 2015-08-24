@@ -30,7 +30,7 @@ public class CellPhone {
 
 		}
 		System.out.println("To meet your limit, you should use " + ((planMinutes - usedMinutes) / daysLeft)  + " min/day.");
-
+		console.close();
 
 	}
 

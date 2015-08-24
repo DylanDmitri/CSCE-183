@@ -4,7 +4,6 @@
  *
  */
 
-import java.io.*;
 import java.util.*;
 
 public class Odometer {
@@ -36,6 +35,8 @@ public class Odometer {
 		System.out.println("Miles Driven: " + milesDriven);
 		System.out.println("Miles per gallon: " + milesPerGallon);
 		System.out.printf("Cost per mile: $%.2f", costPerMile);
+
+		console.close();
 
 	}
 

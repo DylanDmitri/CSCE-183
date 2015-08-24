@@ -48,6 +48,9 @@ public class TimeDilation {
 			System.out.printf("%.2f minute(s)", minutes);
 			
 		}
+		
+		console.close();
+
 	}
 
 }
