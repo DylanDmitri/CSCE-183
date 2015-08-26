@@ -1,14 +1,15 @@
 
 /**
- * @author Lee Fitchett
- *
+ * @author Lee Fitchett And Dylan Grey
+ * @Date 8/24/15
+ * @Description: Calculates cost per mile driven
  */
 
 import java.util.*;
 
 public class Odometer {
 	public static void main(String[] args) {
-		//mostly self explanatory
+
 		Scanner console = new Scanner(System.in);			
 		
 		System.out.print("Odometer Start: ");

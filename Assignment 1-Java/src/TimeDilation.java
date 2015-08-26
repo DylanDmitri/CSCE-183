@@ -1,3 +1,9 @@
+/**
+ * @author Lee Fitchett And Dylan Grey
+ * @Date 8/24/15
+ * @Description: Calculates time dilation when near light speed
+ */
+
 import java.util.Scanner;
 
 public class TimeDilation {
@@ -10,11 +16,8 @@ public class TimeDilation {
 		System.out.print("Time: ");
 		double startTime = console.nextDouble();
 
-		//so calculate the time spent on earth
 		double time = startTime / Math.sqrt(1 - percent * percent);
 
-		//for each time increment, see how many of them fit in the remaining time
-		//then reduce the remaining time by the number of increments added
 		int years = (int) time / 8766;
 		time -= years * 8766;
 		int weeks = (int) time / 168;
@@ -29,12 +32,12 @@ public class TimeDilation {
 		System.out.println("Traveling " + startTime + " hour(s) in your space ship ");
 		System.out.println("at " + percent * 100 + "% the speed of light, ");
 		System.out.println("your friends on Earth would experience ");
-		
+
 		if (years > 0) {
-			System.out.println(years + " year(s)");	
+			System.out.println(years + " year(s)");
 		}
 		if (weeks > 0) {
-			System.out.println(weeks + " week(s)");	
+			System.out.println(weeks + " week(s)");
 		}
 		if (days > 0) {
 			System.out.println(days + " day(s)");
@@ -45,7 +48,7 @@ public class TimeDilation {
 		if (minutes > 0) {
 			System.out.printf("%.2f minute(s)", minutes);
 		}
-		
+
 		console.close();
 	}
 }

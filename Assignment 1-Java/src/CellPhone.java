@@ -1,3 +1,9 @@
+/**
+ * @author Lee Fitchett And Dylan Grey
+ * @Date 8/24/15
+ * @Description: Calculates cell minutes
+ */
+
 import java.util.Scanner;
 
 public class CellPhone {
