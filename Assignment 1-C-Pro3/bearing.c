@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 
-double torads(double t) {
-	while (t > 180) {
-		t -= 360;
+double torads(double d) {
+	while (d > 180) {
+		d -= 360;
 	}
-	while (t < -180) {
-		t += 360;
+	while (d < -180) {
+		d += 360;
 	}
 
-	return t * M_PI / 180.0;
+	return d * M_PI / 180.0;
 }
 
-double fromrads(double t) {
-	while (t > M_PI) {
-		t -= M_PI;
+double fromrads(double r) {
+	while (r > M_PI) {
+		r -= M_PI;
 	}
-	while (t < -M_PI) {
-		t += M_PI;
+	while (r < -M_PI) {
+		r += M_PI;
 	}
 
-	return t * 180 / M_PI;
+	return r * 180 / M_PI;
 }
 
 int main() {
