@@ -8,12 +8,12 @@ public class Pro2_2 {
 		Scanner console = new Scanner(System.in);
 
 		System.out.print("Max Number: ");
-		double max = console.nextDouble();	
+		double max = console.nextDouble();
 		console.nextLine();
-		
+
 		System.out.print("Numbers: ");
 		String input = console.nextLine();
-		 
+
 		List<Integer> includedNumbers = new ArrayList<Integer>();
 		List<Integer> excludedNumbers = new ArrayList<Integer>();
 
@@ -21,17 +21,18 @@ public class Pro2_2 {
 		int temp;
 		for (String num : stringNumbers) {
 			temp = Integer.parseInt(num);
-			if(temp <= max && !includedNumbers.contains(temp)){
+			if (temp <= max && !includedNumbers.contains(temp)) {
 				includedNumbers.add(temp);
 			}
 		}
-		for (int i = 1; i <= max; i++){
-			if(!includedNumbers.contains(i)){
-				excludedNumbers.add(i);	
+		for (int i = 1; i <= max; i++) {
+			if (!includedNumbers.contains(i)) {
+				excludedNumbers.add(i);
 			}
 		}
-		
+
 		System.out.println(excludedNumbers);
+		console.close();
 	}
 
 }
